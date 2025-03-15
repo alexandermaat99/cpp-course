@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course",
-      "program": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course/build/Debug/outDebug"
+      "cwd": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course/Chapter01",
+      "program": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course/Chapter01/build/Debug/outDebug"
     }
   ]
 }
