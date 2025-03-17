@@ -1,13 +1,13 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
-      "request": "launch",
-      "args": [],
-      "cwd": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course/Chapter01/Main.dSYM",
-      "program": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course/Chapter01/Main.dSYM/build/Debug/outDebug"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C/C++ Runner: Debug Session",
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course/Chapter02",
+            "program": "/Users/alexandermaat/PROGRAM/Untitled/cpp-course/Chapter02/build/Debug/outDebug"
+        }
+    ]
 }

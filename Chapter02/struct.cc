@@ -14,6 +14,23 @@ struct User
     std::uint64_t id;
 };
 
+std::string statusToString(Status status)
+{
+    switch (status)
+    {
+    case (Status::Unkown):
+        return "Unknown";
+
+    case (Status::Connected):
+        return "Connected";
+
+    case (Status::Disconnected):
+        return "Disconnected";
+    default:
+        return "Undefined";
+    }
+}
+
 int main()
 {
     // User user1 = {Status::Connected, 42U};
@@ -22,7 +39,7 @@ int main()
     std::cout << user1.id << '\n';
 
     std::cout << (std::int32_t)user1.status << '\n';
-    std::cout << static_cast<std::int32_t>(user1.status) << '\n';
+    std::cout << statusToString(user1.status) << '\n';
 
     return 0;
 }
