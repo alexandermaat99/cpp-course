@@ -8,12 +8,15 @@ namespace Ad
 {
 namespace Types
 {
+
+
 enum class LaneAssociationType
 {
+    UNKNOWN,
     LEFT,
     CENTER,
-    RIGHT,
-    NONE
+    RIGHT
+
 };
 
 struct VehicleType
@@ -24,5 +27,6 @@ struct VehicleType
     float distanceMeters;
 };
 
-}; // namespace Types
+} // namespace Types
+
 } // namespace Ad

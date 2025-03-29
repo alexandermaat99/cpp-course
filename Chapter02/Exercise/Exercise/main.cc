@@ -7,8 +7,8 @@
 
 int main()
 {
-    auto ego_vehicle = Ad::Data::init_ego_vehicle();
-    Ad::Visualize::print_vehicle(ego_vehicle);
+    auto ego_vehicle = Ad::Data::initEgoVehicle();
+    Ad::Visualize::printVehicle(ego_vehicle);
 
     return 0;
 }

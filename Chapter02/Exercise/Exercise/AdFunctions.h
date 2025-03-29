@@ -4,10 +4,23 @@
 
 namespace Ad
 {
-
 namespace Utils
 {
-float kptToMps(const float kph);
-}
+//converts kph to mps and returns the mps as a float
+float kphToMps(const float kph);
 
-} // namespace Ad
+} // namespace Utils
+
+namespace Data
+{
+//initializes the vehicle and and returns a vehicle type which has 4 attributes
+Ad::Types::VehicleType initEgoVehicle();
+} // namespace Data
+
+namespace Visualize
+{
+//function to just print the attributes of the vehicle
+void printVehicle(const Ad::Types::VehicleType vehicle);
+} // namespace Visualize
+
+} //namespace Ad
