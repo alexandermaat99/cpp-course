@@ -23,4 +23,10 @@ namespace Visualize
 void printVehicle(const Ad::Types::VehicleType vehicle);
 } // namespace Visualize
 
+namespace Conversion
+{
+std::string laneConversion(Ad::Types::LaneAssociationType lane);
+
+} // namespace Conversion
+
 } //namespace Ad

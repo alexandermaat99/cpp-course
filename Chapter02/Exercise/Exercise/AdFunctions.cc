@@ -33,6 +33,23 @@ Ad::Types::VehicleType initEgoVehicle()
     };
 }
 } // namespace Data
+namespace Conversion
+{
+std::string laneConversion(Ad::Types::LaneAssociationType lane)
+{
+    switch (lane)
+    {
+    case Ad::Types::LaneAssociationType::CENTER:
+        return "Center";
+    case Ad::Types::LaneAssociationType::LEFT:
+        return "Left";
+    case Ad::Types::LaneAssociationType::RIGHT:
+        return "Right";
+    case Ad::Types::LaneAssociationType::UNKNOWN:
+        return "Unknown";
+    }
+}
+} // namespace Conversion
 
 namespace Visualize
 {
@@ -42,9 +59,10 @@ void printVehicle(const Ad::Types::VehicleType vehicle)
     std::cout << "ID: " << vehicle.id << "\n";
     std::cout << "Speed (mps): " << vehicle.speedMps << "\n";
     std::cout << "Distance (m): " << vehicle.distanceMeters << "\n";
-    std::cout << "Lane: " << static_cast<int>(vehicle.lane) << "\n";
+    std::cout << "Lane: " << Ad::Conversion::laneConversion(vehicle.lane) << "\n";
 }
 
 } // namespace Visualize
+
 
 } // namespace Ad
